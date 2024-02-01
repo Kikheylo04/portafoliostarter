@@ -12,6 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></head>
       <body>
         <ThemeProvider>{children}</ThemeProvider>
       </body>

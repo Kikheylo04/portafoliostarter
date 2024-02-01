@@ -39,7 +39,9 @@ export default function navbar() {
             </li>
           </ul>
         </div>
-        <button className="button n-button">Contact</button>
+        <Link to="contact" spy={true} smooth={true}>
+          <button className="button n-button">Contact</button>
+        </Link>
       </div>
     </div>
   );
