@@ -60,3 +60,15 @@
 .t-wrapper .swiper-pagination-bullet {
   background: var(--orange);
 }
+@media screen and (max-width: 480px) {
+  .testimonial {
+    height: 14rem;
+    padding: 3rem 2rem;
+  }
+  .testimonial > img {
+    margin-bottom: 20px;
+  }
+  .t-wrapper .swiper {
+    height: 450px;
+  }
+}

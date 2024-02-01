@@ -30,9 +30,15 @@ export default function Intro() {
           <button className="button i-button">Hire me</button>
         </Link>
         <div className="i-icons">
-          <Image src={Github} alt="github" />
-          <Image src={Linkedin} alt="linkedin" />
-          <Image src={Instagram} alt="instagram" />
+          <a href="https://github.com/Kikheylo04/portafoliostarter">
+            <Image src={Github} alt="github" />
+          </a>
+          <a href="https://www.linkedin.com/in/kikheylo-chavez/">
+            <Image src={Linkedin} alt="linkedin" />
+          </a>
+          <a href="https://www.instagram.com/sebas._.white/">
+            <Image src={Instagram} alt="instagram" />
+          </a>
         </div>
       </div>
       <div className="i-right">

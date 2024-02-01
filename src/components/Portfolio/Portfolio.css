@@ -37,7 +37,13 @@
   background: var(--orange);
 }
 @media screen and (max-width: 480px) {
+  .portfolio {
+    height: 50vh;
+  }
+  .portfolio-slider {
+    height: 300px;
+  }
   .portfolio img {
-    width: 24rem;
+    width: 100%;
   }
 }
