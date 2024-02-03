@@ -39,6 +39,7 @@
   .card {
     position: relative;
     width: auto;
+    height: auto;
     margin-bottom: -15rem;
   }
 }
