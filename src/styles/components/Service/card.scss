@@ -1,0 +1,90 @@
+.card {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.26);
+  border: 7px solid var(--orangeCard);
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  padding: 16px 20px;
+  position: relative;
+  height: auto;
+  &__emoji {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 70px;
+      width: auto;
+      display: block;
+    }
+  }
+  &__title {
+    margin: 0;
+    font-weight: 700;
+  }
+  &__detail {
+    color: var(--gray);
+    font-size: 14px;
+    margin: 0;
+  }
+  &__button {
+    margin-top: 8px;
+    background: #ffffff;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    border: none;
+    padding: 10px 12px;
+    color: #5290fd;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+
+    &:hover {
+      transform: scale(1.04);
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    height: 250px;
+    padding: 0 10px;
+    &__emoji {
+      height: 70px;
+      img {
+        height: 70px;
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .card {
+    &__emoji {
+      height: 80px;
+      img {
+        height: 80px;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .card {
+    &__emoji {
+      height: 90px;
+      img {
+        height: 90px;
+      }
+    }
+  }
+}

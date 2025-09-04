@@ -1,0 +1,67 @@
+.floatingdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: var(--boxShadow);
+  border-radius: 20px;
+  width: 120px;
+  height: 60px;
+  padding: 0 10px;
+  gap: 10px;
+  &__image {
+    picture {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  p {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .floatingdiv {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .floatingdiv {
+    width: 140px;
+    &__image {
+    picture {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .floatingdiv {
+    width: 160px;
+    &__image {
+    picture {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+    p {
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.contact {
+  display: flex;
+  &__form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    &__user {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      label {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      input {
+        width: 20rem;
+        height: 2rem;
+        padding: 0.3em;
+        outline: none;
+        border: 2px solid var(--orange);
+        border-radius: 8px;
+        font-size: 16px;
+      }
+      textarea {
+        height: 4rem !important;
+      }
+    }
+  }
+}

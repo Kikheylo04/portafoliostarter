@@ -1,0 +1,232 @@
+.service {
+  margin: 0 auto;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 0 auto;
+    &__awesone {
+      display: grid;
+      gap: 16px;
+      position: relative;
+      width: 100%;
+      max-width: 480px;
+      &__text {
+        display: grid;
+        gap: 8px;
+        margin: 0;
+        p:nth-child(1) {
+          color: var(--black);
+          font-size: 20px;
+          font-weight: 700;
+          margin: 0;
+        }
+        p:nth-child(2) {
+          color: var(--orange);
+          font-size: 20px;
+          font-weight: 700;
+          margin: 0;
+        }
+        p:nth-child(3) {
+          color: var(--gray);
+          font-size: 14px;
+          margin: 12px 0 0;
+          max-width: 38ch;
+        }
+      }
+
+      &__button {
+        width: fit-content;
+        padding: 10px 16px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 10px;
+        font-weight: 600;
+        background: var(--orange);
+        color: #fff;
+        transition: background 0.25s ease;
+
+        &:hover {
+          background: color-mix(in srgb, black 10%);
+        }
+        &:active {
+          background: color-mix(in srgb, black 18%);
+        }
+      }
+    }
+
+    &__experience {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  }
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    position: relative;
+    z-index: 2;
+    width: 200px;
+    margin: 0 auto;
+    &__item {
+      width: 100%;
+      max-width: 200px;
+      opacity: 0;
+      transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 700ms ease-in-out;
+      transition-delay: var(--delay, 0ms);
+      will-change: transform, opacity;
+
+      &.is-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  &__more {
+    margin: 0 auto 0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: var(--orange);
+    color: #fff;
+    transition: background 0.25s ease;
+
+    &:hover {
+      background: color-mix(in srgb, var(--orange), black 10%);
+    }
+    &:active {
+      background: color-mix(in srgb, var(--orange), black 18%);
+    }
+  }
+}
+.service img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .service {
+    &__container {
+      display: flex;
+      &__awesone {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: fit-content;
+        &__text {
+          margin: 0;
+          p:nth-child(1) {
+            font-size: 24px;
+          }
+          p:nth-child(2) {
+            font-size: 24px;
+          }
+          p:nth-child(3) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    &__card {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      width: 100%;
+      margin: 0 auto;
+      &__item {
+        max-width: 210px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .service {
+    &__container {
+      gap: 80px;
+      &__awesone {
+        width: 700px;
+        gap: 20px;
+        &__text {
+          margin: 0;
+          p:nth-child(1) {
+            font-size: 28px;
+          }
+          p:nth-child(2) {
+            font-size: 28px;
+          }
+          p:nth-child(3) {
+            font-size: 18px;
+          }
+        }
+      }
+      &__experience {
+        gap: 40px;
+      }
+    }
+    &__card {
+      &__item {
+        max-width: 250px;
+      }
+    }
+  }
+}
+@media (min-width: 1280px) {
+  .service {
+    &__container {
+      gap: 120px;
+      &__awesone {
+        max-width: 680px;
+        &__text {
+          p:nth-child(1) {
+            font-size: 40px;
+          }
+          p:nth-child(2) {
+            font-size: 40px;
+          }
+          p:nth-child(3) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .service {
+    margin: 0 auto;
+    &__container {
+      justify-content: space-evenly;
+      margin: 0;
+      gap: 120px;
+      &__awesone {
+        max-width: 700px;
+        &__text {
+          p:nth-child(1) {
+            font-size: 50px;
+          }
+          p:nth-child(2) {
+            font-size: 50px;
+          }
+          p:nth-child(3) {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
