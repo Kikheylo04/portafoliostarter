@@ -1,6 +1,6 @@
 import { useContext, useEffect, useMemo, useRef, useState } from "react";
 import { themeContext } from "../../app/Context";
-import "../../styles/components/service/service.scss";
+import "../../styles/components/Service/service.scss";
 import Card, { card } from "./card";
 import Experience, { experienceProps } from "./experience";
 function useIsDesktop(breakpoint = 768) {
