@@ -20,7 +20,6 @@ export default function Work() {
         </p>
         <a
           href="/contact"
-          target="_blank"
           className="button work__awesone__button"
         >
           Contrátame

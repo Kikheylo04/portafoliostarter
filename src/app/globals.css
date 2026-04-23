@@ -1,4 +1,10 @@
 :root {
+  /* theme */
+  --bg-light: #ffffff;
+  --bg-dark: #0b0b0b;
+  --text-light: #242d49;
+  --text-dark: #ffffff;
+
   --yellow: #f5c32c;
   --orange: #fca61f;
   --black: #242d49;

@@ -2,8 +2,7 @@
 
 import React, { useContext } from "react";
 import { themeContext } from "../../app/Context";
-import Moon from "@iconscout/react-unicons/icons/uil-moon";
-import Sun from "@iconscout/react-unicons/icons/uil-sun";
+import { UilMoon as Moon, UilSun as Sun } from "../icons";
 import "../../styles/components/Navbar/toogle.scss";
 
 export default function Toggle() {
@@ -13,13 +12,20 @@ export default function Toggle() {
     theme.dispatch({ type: "toggle" });
   };
   return (
-    <div className="toggle" onClick={handleClick}>
-      <Moon />
-      <Sun />
+    <button
+      type="button"
+      className="toggle"
+      onClick={handleClick}
+      role="switch"
+      aria-checked={darkMode}
+      aria-label={darkMode ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
+    >
+      <Moon aria-hidden="true" />
+      <Sun aria-hidden="true" />
       <div
         className="toggle__button"
         style={darkMode ? { left: "2px" } : { right: "2px" }}
       ></div>
-    </div>
+    </button>
   );
 }

@@ -25,21 +25,42 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px 0;
+      padding: 20px 12px;
       width: 300px;
-      height: 160px;
+      min-height: 160px;
+      height: auto;
       background: rgba(255, 255, 255, 0.26);
       border: 7px solid var(--blueCard);
       box-shadow: var(--boxShadow);
       border-radius: 20px;
-      p {
+      gap: 10px;
+
+      &__review {
         display: inline;
         text-align: center;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 0 40px;
-        color: var(--gray);
         font-size: 14px;
+        font-weight: 500;
+        padding: 0 12px;
+        color: var(--gray);
+        margin: 0;
+      }
+
+      &__author {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        margin-top: auto;
+
+        &__name {
+          font-size: 13px;
+          font-weight: 700;
+          color: var(--orange);
+        }
+        &__role {
+          font-size: 11px;
+          color: var(--gray);
+        }
       }
     }
   }

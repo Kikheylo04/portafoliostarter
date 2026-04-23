@@ -24,41 +24,39 @@ export default function Intro() {
             web, que produce un trabajo de calidad.
           </p>
           <Link
-            href="contact"
-            target="_blank"
-            className="intro__person__name__button button "
-            rel="noopener noreferrer"
+            href="/contact"
+            className="intro__person__name__button button"
           >
             Contrátame
           </Link>
         </div>
         <div className="intro__person__icons">
-          <a href="https://github.com/Kikheylo04/portafoliostarter">
+          <a href="https://github.com/Kikheylo04/portafoliostarter" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Kikheylo">
             <picture>
-              <img src="/assets/images/github.png" alt="" />
+              <img src="/assets/images/github.png" alt="GitHub" />
             </picture>
           </a>
-          <a href="https://www.linkedin.com/in/kikheylo-chavez/">
+          <a href="https://www.linkedin.com/in/kikheylo-chavez/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Kikheylo">
             <picture>
-              <img src="/assets/images/linkedin.png" alt="" />
+              <img src="/assets/images/linkedin.png" alt="LinkedIn" />
             </picture>
           </a>
-          <a href="https://www.instagram.com/sebas._.white/">
+          <a href="https://www.instagram.com/sebas._.white/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Kikheylo">
             <picture>
-              <img src="/assets/images/instagram.png" alt="" />
+              <img src="/assets/images/instagram.png" alt="Instagram" />
             </picture>
           </a>
         </div>
       </div>
       <div className="intro__image">
         <picture>
-          <img src="/assets/images/Vector1.png" alt="" />
+          <img src="/assets/images/Vector1.png" alt="" aria-hidden="true" />
         </picture>
         <picture>
-          <img src="/assets/images/Vector2.png" alt="" />
+          <img src="/assets/images/Vector2.png" alt="" aria-hidden="true" />
         </picture>
         <picture>
-          <img src="/assets/images/boy.png" alt="" />
+          <img src="/assets/images/boy.png" alt="Foto de perfil de Kikheylo Sebastian" />
         </picture>
         <div
           ref={crown.ref}
